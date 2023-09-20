@@ -1,0 +1,20 @@
+{{#each beersFromApi}}
+
+    <div>
+
+        {{> beerPartial}}
+
+        {{#each food_pairing}}
+
+            <p>{{this}}</p>
+
+        {{/each}}
+
+        <p>{{brewers_tips}}</p>
+
+    </div>
+
+
+    <hr>
+
+{{/each}}
